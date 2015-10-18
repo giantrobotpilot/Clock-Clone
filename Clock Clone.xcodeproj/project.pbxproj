@@ -25,6 +25,18 @@
 		6A9ACB611BD40BB400D563F6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ACB601BD40BB400D563F6 /* TimerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6A9ACB621BD40BB400D563F6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ACB601BD40BB400D563F6 /* TimerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6A9ACB631BD40BB400D563F6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ACB601BD40BB400D563F6 /* TimerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB661BD40DA400D563F6 /* WorldClockStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB651BD40DA400D563F6 /* WorldClockStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB671BD40DA400D563F6 /* WorldClockStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB651BD40DA400D563F6 /* WorldClockStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB681BD40DA400D563F6 /* WorldClockStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB651BD40DA400D563F6 /* WorldClockStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB6A1BD40DAD00D563F6 /* AlarmStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB691BD40DAD00D563F6 /* AlarmStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB6B1BD40DAD00D563F6 /* AlarmStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB691BD40DAD00D563F6 /* AlarmStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB6C1BD40DAD00D563F6 /* AlarmStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB691BD40DAD00D563F6 /* AlarmStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB6E1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB6D1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB6F1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB6D1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB701BD40DBD00D563F6 /* StopwatchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB6D1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB721BD40DC500D563F6 /* TimerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB711BD40DC500D563F6 /* TimerStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB731BD40DC500D563F6 /* TimerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB711BD40DC500D563F6 /* TimerStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A9ACB741BD40DC500D563F6 /* TimerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ACB711BD40DC500D563F6 /* TimerStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +73,10 @@
 		6A9ACB581BD40B9B00D563F6 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		6A9ACB5C1BD40BA500D563F6 /* StopwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		6A9ACB601BD40BB400D563F6 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		6A9ACB651BD40DA400D563F6 /* WorldClockStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorldClockStoryboard.storyboard; sourceTree = "<group>"; };
+		6A9ACB691BD40DAD00D563F6 /* AlarmStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmStoryboard.storyboard; sourceTree = "<group>"; };
+		6A9ACB6D1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopwatchStoryboard.storyboard; sourceTree = "<group>"; };
+		6A9ACB711BD40DC500D563F6 /* TimerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimerStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +129,7 @@
 			children = (
 				6A9ACB241BD40AF600D563F6 /* AppDelegate.swift */,
 				6A9ACB641BD40BBB00D563F6 /* ViewControllers */,
-				6A9ACB2A1BD40AF600D563F6 /* Main.storyboard */,
+				6A9ACB751BD40DCE00D563F6 /* Storyboards */,
 				6A9ACB2D1BD40AF600D563F6 /* Assets.xcassets */,
 				6A9ACB2F1BD40AF600D563F6 /* LaunchScreen.storyboard */,
 				6A9ACB321BD40AF600D563F6 /* Info.plist */,
@@ -148,6 +164,18 @@
 				6A9ACB601BD40BB400D563F6 /* TimerViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6A9ACB751BD40DCE00D563F6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6A9ACB2A1BD40AF600D563F6 /* Main.storyboard */,
+				6A9ACB651BD40DA400D563F6 /* WorldClockStoryboard.storyboard */,
+				6A9ACB691BD40DAD00D563F6 /* AlarmStoryboard.storyboard */,
+				6A9ACB6D1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard */,
+				6A9ACB711BD40DC500D563F6 /* TimerStoryboard.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +281,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9ACB6A1BD40DAD00D563F6 /* AlarmStoryboard.storyboard in Resources */,
 				6A9ACB311BD40AF600D563F6 /* LaunchScreen.storyboard in Resources */,
 				6A9ACB2E1BD40AF600D563F6 /* Assets.xcassets in Resources */,
+				6A9ACB6E1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard in Resources */,
+				6A9ACB721BD40DC500D563F6 /* TimerStoryboard.storyboard in Resources */,
 				6A9ACB2C1BD40AF600D563F6 /* Main.storyboard in Resources */,
+				6A9ACB661BD40DA400D563F6 /* WorldClockStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9ACB6F1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard in Resources */,
+				6A9ACB671BD40DA400D563F6 /* WorldClockStoryboard.storyboard in Resources */,
+				6A9ACB6B1BD40DAD00D563F6 /* AlarmStoryboard.storyboard in Resources */,
+				6A9ACB731BD40DC500D563F6 /* TimerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9ACB701BD40DBD00D563F6 /* StopwatchStoryboard.storyboard in Resources */,
+				6A9ACB681BD40DA400D563F6 /* WorldClockStoryboard.storyboard in Resources */,
+				6A9ACB6C1BD40DAD00D563F6 /* AlarmStoryboard.storyboard in Resources */,
+				6A9ACB741BD40DC500D563F6 /* TimerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
