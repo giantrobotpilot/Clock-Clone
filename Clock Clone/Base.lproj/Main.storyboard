@@ -15,10 +15,59 @@
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="L5q-sR-lAm" kind="relationship" relationship="viewControllers" id="Lxl-R9-5an"/>
+                        <segue destination="1PE-BL-VJy" kind="relationship" relationship="viewControllers" id="0gV-bW-pIY"/>
+                        <segue destination="0LZ-jH-Pc2" kind="relationship" relationship="viewControllers" id="1K5-ex-Fjg"/>
+                        <segue destination="zy4-Sv-siT" kind="relationship" relationship="viewControllers" id="eru-Iu-O0W"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--WorldClockStoryboard-->
+        <scene sceneID="jv9-ce-uQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WorldClockStoryboard" id="L5q-sR-lAm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="World Clock" image="first" id="DS0-d0-YGT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vG-IZ-cBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="-318"/>
+        </scene>
+        <!--AlarmStoryboard-->
+        <scene sceneID="9Qi-18-U8L">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AlarmStoryboard" id="1PE-BL-VJy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alarm" image="first" id="To5-WZ-2SB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5g-YH-KdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652.5" y="-165"/>
+        </scene>
+        <!--StopwatchStoryboard-->
+        <scene sceneID="TtR-82-MRe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StopwatchStoryboard" id="0LZ-jH-Pc2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="p6a-wF-VLa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGj-US-CKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.25" y="90"/>
+        </scene>
+        <!--TimerStoryboard-->
+        <scene sceneID="AlX-Bk-Sn1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimerStoryboard" id="zy4-Sv-siT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7lS-Zk-cWn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSi-zQ-PXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583.5" y="274"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorldClockViewController: UIViewController {
+class WorldClockViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
