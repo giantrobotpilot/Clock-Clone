@@ -21,6 +21,30 @@ class WorldClockViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - UITableView data source
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("WorldClockCell") as! WorldClockTableViewCell
+        switch indexPath.row {
+        case 0:
+            cell.cityLabel.text = "Denver"
+            cell.timeDifferenceLabel.text = "Today"
+        case 1:
+            cell.cityLabel.text = "Sydney"
+            cell.timeDifferenceLabel.text = "Tomorrow, 17 hours ahead"
+        case 2:
+            cell.cityLabel.text = "Anchorage"
+            cell.timeDifferenceLabel.text = "Today, 2 hours behind"
+        default:
+            cell.cityLabel.text = ""
+            cell.timeDifferenceLabel.text = ""
+        }
+        return cell
+    }
 
     /*
     // MARK: - Navigation
