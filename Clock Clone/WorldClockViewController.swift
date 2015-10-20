@@ -9,6 +9,8 @@
 import UIKit
 
 class WorldClockViewController: UITableViewController {
+    
+    let cityDataSource = CityDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,20 +31,22 @@ class WorldClockViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("WorldClockCell") as! WorldClockTableViewCell
+        let city = self.cityDataSource.cities[indexPath.row]
+        
+        cell.cityLabel.text = city.city
+        
         switch indexPath.row {
         case 0:
-            cell.cityLabel.text = "Denver"
             cell.timeDifferenceLabel.text = "Today"
         case 1:
-            cell.cityLabel.text = "Sydney"
             cell.timeDifferenceLabel.text = "Tomorrow, 17 hours ahead"
         case 2:
-            cell.cityLabel.text = "Anchorage"
             cell.timeDifferenceLabel.text = "Today, 2 hours behind"
         default:
             cell.cityLabel.text = ""
             cell.timeDifferenceLabel.text = ""
         }
+
         return cell
     }
 

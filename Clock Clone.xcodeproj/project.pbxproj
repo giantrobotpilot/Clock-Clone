@@ -40,6 +40,10 @@
 		6AD78E331BD47900007AF187 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD78E321BD47900007AF187 /* WorldClockTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		6AD78E341BD47900007AF187 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD78E321BD47900007AF187 /* WorldClockTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		6AD78E351BD47900007AF187 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD78E321BD47900007AF187 /* WorldClockTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DD8861711BD6D57B004B660F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8861701BD6D57B004B660F /* City.swift */; settings = {ASSET_TAGS = (); }; };
+		DD8861721BD6D57B004B660F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8861701BD6D57B004B660F /* City.swift */; settings = {ASSET_TAGS = (); }; };
+		DD8861741BD6DA91004B660F /* CityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8861731BD6DA91004B660F /* CityDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		DD8861751BD6DA91004B660F /* CityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8861731BD6DA91004B660F /* CityDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,8 @@
 		6A9ACB6D1BD40DBD00D563F6 /* StopwatchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopwatchStoryboard.storyboard; sourceTree = "<group>"; };
 		6A9ACB711BD40DC500D563F6 /* TimerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimerStoryboard.storyboard; sourceTree = "<group>"; };
 		6AD78E321BD47900007AF187 /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
+		DD8861701BD6D57B004B660F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		DD8861731BD6DA91004B660F /* CityDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				6A9ACB241BD40AF600D563F6 /* AppDelegate.swift */,
+				DD8861701BD6D57B004B660F /* City.swift */,
+				DD8861731BD6DA91004B660F /* CityDataSource.swift */,
 				6A9ACB641BD40BBB00D563F6 /* ViewControllers */,
 				6A9ACB751BD40DCE00D563F6 /* Storyboards */,
 				6A9ACB2D1BD40AF600D563F6 /* Assets.xcassets */,
@@ -328,9 +336,11 @@
 				6A9ACB611BD40BB400D563F6 /* TimerViewController.swift in Sources */,
 				6A9ACB5D1BD40BA500D563F6 /* StopwatchViewController.swift in Sources */,
 				6A9ACB551BD40B8D00D563F6 /* WorldClockViewController.swift in Sources */,
+				DD8861741BD6DA91004B660F /* CityDataSource.swift in Sources */,
 				6AD78E331BD47900007AF187 /* WorldClockTableViewCell.swift in Sources */,
 				6A9ACB251BD40AF600D563F6 /* AppDelegate.swift in Sources */,
 				6A9ACB591BD40B9B00D563F6 /* AlarmViewController.swift in Sources */,
+				DD8861711BD6D57B004B660F /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +351,11 @@
 				6A9ACB621BD40BB400D563F6 /* TimerViewController.swift in Sources */,
 				6A9ACB5E1BD40BA500D563F6 /* StopwatchViewController.swift in Sources */,
 				6A9ACB561BD40B8D00D563F6 /* WorldClockViewController.swift in Sources */,
+				DD8861751BD6DA91004B660F /* CityDataSource.swift in Sources */,
 				6AD78E341BD47900007AF187 /* WorldClockTableViewCell.swift in Sources */,
 				6A9ACB3C1BD40AF600D563F6 /* Clock_CloneTests.swift in Sources */,
 				6A9ACB5A1BD40B9B00D563F6 /* AlarmViewController.swift in Sources */,
+				DD8861721BD6D57B004B660F /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
