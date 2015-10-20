@@ -11,6 +11,7 @@ import UIKit
 class WorldClockViewController: UITableViewController {
     
     let cityDataSource = CityDataSource()
+    var clockViewMode = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +47,24 @@ class WorldClockViewController: UITableViewController {
             cell.cityLabel.text = ""
             cell.timeDifferenceLabel.text = ""
         }
+        
+        if self.clockViewMode {
+            cell.timeLabel.hidden = true
+            cell.meridianLabel.hidden = true
+            cell.clockImageView.hidden = false
+        }
+        else {
+            cell.timeLabel.hidden = false
+            cell.meridianLabel.hidden = false
+            cell.clockImageView.hidden = true
+        }
 
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.clockViewMode = !self.clockViewMode
+        tableView.reloadData()
     }
-    */
 
 }

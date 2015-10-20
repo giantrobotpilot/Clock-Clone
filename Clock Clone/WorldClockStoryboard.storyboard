@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wKw-nc-hwT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--World Clock-->
@@ -14,7 +15,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorldClockCell" rowHeight="89" id="JVk-7B-AqC" customClass="WorldClockTableViewCell" customModule="Clock_Clone" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WorldClockCell" rowHeight="93" id="JVk-7B-AqC" customClass="WorldClockTableViewCell" customModule="Clock_Clone" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JVk-7B-AqC" id="ji4-Tf-q0M">
@@ -27,7 +28,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                            <variation key="widthClass=compact" misplaced="YES">
                                                 <rect key="frame" x="8" y="15" width="247" height="21"/>
                                             </variation>
                                         </label>
@@ -47,7 +48,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                            <variation key="widthClass=compact" misplaced="YES">
                                                 <rect key="frame" x="254" y="8" width="84" height="27.5"/>
                                             </variation>
                                         </label>
@@ -57,18 +58,59 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                            <variation key="widthClass=compact" misplaced="YES">
                                                 <rect key="frame" x="346" y="13" width="25" height="21"/>
                                             </variation>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-jD-gxS">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="yTq-c8-K5g"/>
+                                                <constraint firstAttribute="width" constant="75" id="zKN-X8-G8F"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="yTq-c8-K5g"/>
+                                                    <exclude reference="zKN-X8-G8F"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="yTq-c8-K5g"/>
+                                                    <include reference="zKN-X8-G8F"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
                                     </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="jy6-S4-1Yi" firstAttribute="leading" secondItem="WiS-gn-xCR" secondAttribute="trailing" constant="8" id="3Or-ha-hSY"/>
+                                        <constraint firstItem="jy6-S4-1Yi" firstAttribute="baseline" secondItem="WiS-gn-xCR" secondAttribute="baseline" id="Dta-e4-2zy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1Hd-jD-gxS" secondAttribute="trailing" constant="21" id="Npt-Wl-uda"/>
+                                        <constraint firstAttribute="topMargin" secondItem="1Hd-jD-gxS" secondAttribute="top" id="Q8I-Mc-o9d"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jy6-S4-1Yi" secondAttribute="trailing" constant="21" id="TW9-pn-mKm"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="mHb-7v-jO0" secondAttribute="leading" id="lWL-aP-ba8"/>
+                                        <constraint firstItem="WiS-gn-xCR" firstAttribute="baseline" secondItem="mHb-7v-jO0" secondAttribute="baseline" id="lZY-7h-hCo"/>
+                                        <constraint firstItem="mHb-7v-jO0" firstAttribute="top" secondItem="ji4-Tf-q0M" secondAttribute="topMargin" constant="7" id="yVU-mU-soL"/>
+                                    </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="mHb-7v-jO0"/>
                                             <exclude reference="qlE-dM-qn8"/>
                                             <exclude reference="WiS-gn-xCR"/>
                                             <exclude reference="jy6-S4-1Yi"/>
+                                            <exclude reference="1Hd-jD-gxS"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="lWL-aP-ba8"/>
+                                            <exclude reference="yVU-mU-soL"/>
+                                            <exclude reference="lZY-7h-hCo"/>
+                                            <exclude reference="Npt-Wl-uda"/>
+                                            <exclude reference="Q8I-Mc-o9d"/>
+                                            <exclude reference="3Or-ha-hSY"/>
+                                            <exclude reference="Dta-e4-2zy"/>
+                                            <exclude reference="TW9-pn-mKm"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -77,14 +119,27 @@
                                             <include reference="qlE-dM-qn8"/>
                                             <include reference="WiS-gn-xCR"/>
                                             <include reference="jy6-S4-1Yi"/>
+                                            <include reference="1Hd-jD-gxS"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="lWL-aP-ba8"/>
+                                            <include reference="yVU-mU-soL"/>
+                                            <include reference="lZY-7h-hCo"/>
+                                            <include reference="Npt-Wl-uda"/>
+                                            <include reference="Q8I-Mc-o9d"/>
+                                            <include reference="3Or-ha-hSY"/>
+                                            <include reference="Dta-e4-2zy"/>
+                                            <include reference="TW9-pn-mKm"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
                                     <outlet property="cityLabel" destination="mHb-7v-jO0" id="GKQ-Dp-Gtj"/>
+                                    <outlet property="clockImageView" destination="1Hd-jD-gxS" id="gj5-eZ-Hhk"/>
                                     <outlet property="meridianLabel" destination="jy6-S4-1Yi" id="6M6-Lw-UXl"/>
                                     <outlet property="timeDifferenceLabel" destination="qlE-dM-qn8" id="cRG-le-1ZS"/>
+                                    <outlet property="timeLabel" destination="WiS-gn-xCR" id="me6-Hd-rOG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -162,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock" width="151" height="150"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>

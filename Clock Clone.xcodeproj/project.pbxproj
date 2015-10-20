@@ -87,6 +87,7 @@
 		6AD78E321BD47900007AF187 /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
 		DD8861701BD6D57B004B660F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		DD8861731BD6DA91004B660F /* CityDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDataSource.swift; sourceTree = "<group>"; };
+		DD8861761BD6E335004B660F /* Time Zone Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Time Zone Playground.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 		6A9ACB181BD40AF600D563F6 = {
 			isa = PBXGroup;
 			children = (
+				DD8861761BD6E335004B660F /* Time Zone Playground.playground */,
 				6A9ACB231BD40AF600D563F6 /* Clock Clone */,
 				6A9ACB3A1BD40AF600D563F6 /* Clock CloneTests */,
 				6A9ACB451BD40AF700D563F6 /* Clock CloneUITests */,

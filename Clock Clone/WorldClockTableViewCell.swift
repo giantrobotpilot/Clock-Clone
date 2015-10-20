@@ -11,8 +11,10 @@ import UIKit
 class WorldClockTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timeDifferenceLabel: UILabel!
     @IBOutlet weak var meridianLabel: UILabel!
+    @IBOutlet weak var clockImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
